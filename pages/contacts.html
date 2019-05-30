@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="body_contacts">
+  <header class="header">
+    <nav>
+      <ul class="header__menu">
+        <li class="menu__item"><a class="menu__item_link" href="../index.html">ГЛАВНАЯ</a></li>
+        <li class="menu__item"><a class="menu__item_link" href="../pages/articles.html">СТАТЬИ</a></li>
+        <li class="menu__item"><a class="menu__item_link" href="catalog.html">КАТАЛОГ</a></li>
+        <li class="menu__item"><a class="menu__item_link" href="image_gallery.html">ГАЛЕРЕЯ</a></li>
+        <li class="menu__item"><a class="menu__item_link" href="registration.html">РЕГИСТРАЦИЯ</a></li>
+        <li class="menu__item menu__item_last">КОНТАКТЫ</li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="main__section">
+      <div class="main__section__contacts">
+        <div class="contacts__block1">
+          <div class="block1__address">
+            <pre>
+г. Харьков,             Пн.-Пт.
+ул. Отакара Яроша 18,   с 10:00 
+5 этаж, оф. 504         до 18:00
+            </pre>
+          </div>
+          <div class="block1__googleMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d640.7996546366019!2d36.217398!3d50.026374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49b393aef25a2889!2sSolyaris!5e0!3m2!1sen!2sua!4v1559117525401!5m2!1sen!2sua" width="600" height="350"  style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="contacts__block2">
+          <form action="feedback.php" method="post">
+            <fieldset class="block2__body">
+              <legend class="block2__body_fieldset"><label class="block2__body_fieldset_name">&nbsp;&nbsp;Форма для обратной связи&nbsp;&nbsp;</label></legend>
+              <input class="block2__body_input" type="text" name="first_name" placeholder=" Ваше имя" autofocus>
+              <input class="block2__body_input" type="tel" name="phone_number" pattern="380-[0-9]{5}-[0-9]{4}" placeholder=" Ваш телефон в формате 380-XXXXX-XXXX">
+              <input class="block2__body_input" type="email" name="email" placeholder=" Ваш e-mail">
+              <textarea class="block2__body_textarea" name="question" id="#" cols="100" rows="8" placeholder=" Задайте нам свой вопрос"></textarea>
+              <input class="block2__body_input" type="submit" value="Отправить">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="menu__item menu__item_last footer__menu"><a class="menu__item_link" href="../pages/page-nav.html">НАВИГАЦИЯ</a></div>
+    <p class="footer__copyright">&copy; Maksim Borovik</p>
+  </footer>
+</body>
+</html>
