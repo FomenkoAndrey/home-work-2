@@ -1,25 +1,291 @@
 @font-face {
-  font-family: "Zilla Slab";
+  font-family: "Noto Sans";
   font-weight: 400;
   font-style: normal;
 
-  src: local("Zilla Slab"), local("ZillaSlab-Regular"), url("../fonts/zilla-slab-v4-latin-regular.woff2") format("woff2"), url("../fonts/zilla-slab-v4-latin-regular.woff") format("woff");
+  font-display: swap;
+  src: local("Noto Sans"), local("NotoSans"), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr6DRAW_0.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-
 @font-face {
-  font-family: "Archivo Black";
+  font-family: "Noto Sans";
   font-weight: 400;
   font-style: normal;
 
-  src: local("Archivo Black Regular"), local("ArchivoBlack-Regular"), url("../fonts/archivo-black-v8-latin_latin-ext-regular.woff2") format("woff2"), url("../fonts/archivo-black-v8-latin_latin-ext-regular.woff") format("woff");
+  font-display: swap;
+  src: local("Noto Sans"), local("NotoSans"), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr4TRAW_0.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans"), local("NotoSans"), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr5DRAW_0.woff2) format("woff2");
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans"), local("NotoSans"), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr6TRAW_0.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans"), local("NotoSans"), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr5jRAW_0.woff2) format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans"), local("NotoSans"), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr6jRAW_0.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans"), local("NotoSans"), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr6zRAW_0.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans"), local("NotoSans"), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url(https://fonts.gstatic.com/s/notosans/v9/o-0NIpQlx3QUlC5A4PNjXhFVadyB1Wk.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url(https://fonts.gstatic.com/s/notosans/v9/o-0NIpQlx3QUlC5A4PNjXhFVYNyB1Wk.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url(https://fonts.gstatic.com/s/notosans/v9/o-0NIpQlx3QUlC5A4PNjXhFVZdyB1Wk.woff2) format("woff2");
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url(https://fonts.gstatic.com/s/notosans/v9/o-0NIpQlx3QUlC5A4PNjXhFVaNyB1Wk.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url(https://fonts.gstatic.com/s/notosans/v9/o-0NIpQlx3QUlC5A4PNjXhFVZ9yB1Wk.woff2) format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url(https://fonts.gstatic.com/s/notosans/v9/o-0NIpQlx3QUlC5A4PNjXhFVa9yB1Wk.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url(https://fonts.gstatic.com/s/notosans/v9/o-0NIpQlx3QUlC5A4PNjXhFVatyB1Wk.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url(https://fonts.gstatic.com/s/notosans/v9/o-0NIpQlx3QUlC5A4PNjXhFVZNyB.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif"), local("NotoSerif"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNfFoWaCi_.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif"), local("NotoSerif"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNfFMWaCi_.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif"), local("NotoSerif"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNfFsWaCi_.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif"), local("NotoSerif"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNfFQWaCi_.woff2) format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif"), local("NotoSerif"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNfFgWaCi_.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif"), local("NotoSerif"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNfFkWaCi_.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif"), local("NotoSerif"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNfFcWaA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif Bold"), local("NotoSerif-Bold"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzfRqecf1I.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif Bold"), local("NotoSerif-Bold"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzfROecf1I.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif Bold"), local("NotoSerif-Bold"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzfRuecf1I.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif Bold"), local("NotoSerif-Bold"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzfRSecf1I.woff2) format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif Bold"), local("NotoSerif-Bold"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzfRiecf1I.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif Bold"), local("NotoSerif-Bold"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzfRmecf1I.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("Noto Serif Bold"), local("NotoSerif-Bold"), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzfReecQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-.main,
-.header__menu {
+.container,
+.header__menu,
+.footer__copyright {
   width: 100%;
   max-width: 992px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.news__title,
+.catalog__title,
+.gallery__title {
+  margin-bottom: 30px;
+
+  border-bottom: 1px solid #cccccc;
 }
 
 .page-articles,
@@ -32,15 +298,15 @@
   background-size: contain;
 }
 
-.main {
+.container {
   min-height: 80vh;
-  padding: 60px 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   text-align: justify;
 
   background-color: #ffffff;
 
-  font-family: "Zilla Slab", serif;
   font-size: 1rem;
 }
 
@@ -51,7 +317,9 @@
 }
 
 html {
-  font-size: 20px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 body {
@@ -61,8 +329,21 @@ body {
   width: 100%;
 }
 
+h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
+
+  color: #086fa1;
 }
 
 .hidden {
@@ -91,363 +372,6 @@ a {
 
 .page-navigation {
   background-image: url(../img/navigation.jpg);
-}
-
-.link {
-  text-decoration: none;
-
-  color: #f7d0ab;
-
-  -webkit-filter: none;
-  filter: none;
-}
-
-.link:hover {
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
-.menu__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
-  margin-right: 25px;
-
-  list-style-type: none;
-
-  color: black;
-}
-
-.menu__item::after {
-  margin-left: 25px;
-
-  content: "|";
-}
-
-.menu__item_link {
-  text-decoration: none;
-
-  color: #fdfdfd;
-}
-
-.menu__item_link:hover {
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  transform: scale(1.15);
-}
-
-.menu__item_last {
-  margin-right: 0;
-}
-
-.menu__item_last::after {
-  content: none;
-}
-.main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main__news-feed__article_h2 {
-  margin-bottom: 22px;
-}
-
-.main__news-feed__article_p {
-  margin: 5px 0 10px;
-}
-
-.main__article__section_h1 {
-  margin-bottom: 44px;
-}
-
-.main__article__section_h4 {
-  margin: 22px 0;
-}
-.image-gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.image-gallery__block1 {
-  -ms-flex-preferred-size: 15%;
-  flex-basis: 15%;
-}
-
-.image-gallery__block1_list {
-  list-style: none;
-}
-
-.image-gallery__block1_list_li {
-  margin: 15px 0;
-}
-
-.block1_list_li_a {
-  text-decoration: none;
-}
-
-.image-gallery__block2 {
-  -ms-flex-preferred-size: 85%;
-  flex-basis: 85%;
-}
-
-.image-gallery__block2_items_img {
-  width: 100%;
-
-  border-radius: 10px;
-}
-
-.image-gallery__block2_items {
-  position: relative;
-}
-
-.image-gallery__block2_items_target {
-  position: absolute;
-  z-index: 2;
-
-  -webkit-transition: all 0.3s 0.1s ease;
-  -o-transition: all 0.3s 0.1s ease;
-  transition: all 0.3s 0.1s ease;
-
-  opacity: 0;
-}
-
-.image-gallery__block2_items_target:target {
-  opacity: 1;
-}
-
-.image-gallery__block2_items_target:first-child {
-  z-index: 1;
-
-  opacity: 1;
-}
-.main__section_catalog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main__section_catalog_categories {
-  font-size: 22px;
-}
-
-.main__section_catalog_category {
-  margin: 5px 0;
-}
-
-.main__section_catalog_kind {
-  padding-left: 20px;
-
-  font-size: 18px;
-}
-.comments {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.comments__header {
-  width: 100%;
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-
-.comments__header_line {
-  margin-top: 40px;
-  margin-bottom: 40px;
-
-  border: 1px solid black;
-}
-
-.comments__header_line_text {
-  margin-top: -58px;
-  margin-bottom: 20px;
-  padding-top: 0;
-  padding-right: 13px;
-  padding-left: 13px;
-
-  text-align: center;
-
-  color: black;
-
-  font-family: "Zilla Slab", serif;
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.comments__header_line_text_span {
-  padding: 0 20px;
-
-  background: #ffffff;
-}
-
-.comments__body {
-  width: 90%;
-}
-
-.comments__body_unit {
-  margin: 0 0 40px;
-}
-
-.comments__body_unit_flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
-  margin-top: 5px;
-}
-
-.comments__body__div {
-  -ms-flex-preferred-size: 10%;
-  flex-basis: 10%;
-}
-
-.comments__body_text {
-  -ms-flex-preferred-size: 90%;
-  flex-basis: 90%;
-}
-
-.comments__body_unit_name {
-  text-decoration: none;
-
-  color: black;
-
-  font-weight: bold;
-}
-
-.comments__body_unit_avatar {
-  float: left;
-}
-
-.comments__body_unit_management {
-  text-align: right;
-}
-.main__section__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-
-  padding: 25px 0;
-}
-
-.contacts__block1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-
-  width: 90%;
-}
-
-.block1__address {
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-
-  font-size: 18px;
-}
-
-.block1__googleMap {
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-}
-
-.block2__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-
-  margin-top: 25px;
-  padding: 15px;
-
-  border: none;
-  border-radius: 10px;
-  background-color: #ff8800;
-}
-
-.block2__body_fieldset {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.block2__body_fieldset_name,
-.registration__form_fieldset_legend {
-  color: #2e2e2e;
-  border: none;
-  border-radius: 8px;
-  background-color: #ff8800;
-}
-
-.block2__body_input {
-  width: 300px;
-  height: 20px;
-  margin: 5px;
-
-  border-radius: 10px;
-  outline: none;
-}
-
-.block2__body_textarea,
-.form_textarea {
-  margin: 5px;
-
-  resize: none;
-
-  border-radius: 10px;
-  outline: none;
-}
-.registration__form {
-  width: 100%;
-
-  border-radius: 10px;
-}
-
-.registration__form_fieldset {
-  width: 60%;
-  margin: 5px auto;
-  padding: 5px;
-
-  border: none;
-  border-radius: 10px;
-  background: #ff8800;
-}
-
-.form_input {
-  margin: 5px;
-}
-
-.registration__form_buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
-  margin: 5px;
-}
-.navigation_title {
-  margin: 20px 0;
 }
 
 .header {
@@ -481,16 +405,132 @@ a {
 }
 
 .header__menu-link {
+  position: relative;
+
   padding: 7.5px 15px;
 
   color: #ffffff;
+}
+
+.header__menu-link::after {
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  left: 15px;
+
+  height: 2px;
+
+  content: "";
+  -webkit-transition: right 0.25s;
+  -o-transition: right 0.25s;
+  transition: right 0.25s;
+
+  opacity: 0;
+  background-color: #ffffff;
+}
+
+.header__menu-link:hover::after {
+  right: 15px;
+
+  opacity: 1;
 }
 
 .header__menu-link--active {
   color: #000000;
 }
 
-.main-menu__list {
+.news__article {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.news .news__article-title {
+  margin-bottom: 20px;
+}
+
+.news .news__article-description {
+  margin-bottom: 20px;
+}
+
+.news .news__article-title-link {
+  font-weight: bold;
+}
+
+.catalog__category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__category-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 33%;
+  flex: 1 0 33%;
+}
+
+.gallery__slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery__slides-list {
+  -ms-flex-preferred-size: 180px;
+  flex-basis: 180px;
+
+  width: 180px;
+}
+
+.gallery__slides-pictures {
+  position: relative;
+
+  -webkit-box-flex: 1;
+  -ms-flex-preferred-size: calc(100% - 180px);
+  flex-basis: calc(100% - 180px);
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.gallery__slide-item {
+  margin-bottom: 30px;
+}
+
+.gallery__slide-item-anchor {
+  font-size: 1.125rem;
+}
+
+.gallery__slide-picture {
+  position: absolute;
+  z-index: -1;
+
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+
+  opacity: 0;
+}
+
+.gallery__slide-picture-image {
+  width: 100%;
+
+  border-radius: 7px;
+}
+
+.gallery__slide-picture:first-of-type:not(:target) {
+  z-index: 1;
+
+  opacity: 1;
+}
+
+.gallery__slide-picture:target {
+  z-index: 1;
+
+  opacity: 1;
+}
+
+.index-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,7 +541,9 @@ a {
   padding: 0;
 }
 
-.main-menu__item {
+.index-menu__item {
+  position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,61 +560,111 @@ a {
 
   list-style-type: none;
 
+  -webkit-transition: -webkit-transform 15s ease-out;
+  -o-transition: transform 15s ease-out;
+  transition: -webkit-transform 15s ease-out;
+  transition: transform 15s ease-out;
+  transition: transform 15s ease-out, -webkit-transform 15s ease-out;
   text-align: center;
 
-  color: #f7d0ab;
   background-size: cover;
-  text-shadow: 0 0 10px black;
-
-  font-family: "Archivo Black", sans-serif;
-  font-size: 50px;
-  font-weight: bold;
 }
 
-.main-menu__item--index {
+.index-menu__item:hover {
+  z-index: 1;
+
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+
+  -webkit-box-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 10px #000000;
+}
+
+.index-menu__item:hover a {
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+.index-menu__item--index {
   background-image: url(../img/index.jpg);
 
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-.main-menu__item--articles {
+.index-menu__item--articles {
   background-image: url(../img/articles.jpg);
 }
 
-.main-menu__item--catalog {
+.index-menu__item--catalog {
   background-image: url(../img/catalog.jpg);
 }
 
-.main-menu__item--gallery {
+.index-menu__item--gallery {
   background-image: url(../img/image_gallery.jpg);
 }
 
-.main-menu__item--registration {
+.index-menu__item--registration {
   background-image: url(../img/registration.jpg);
 }
 
-.main-menu__item--contacts {
+.index-menu__item--contacts {
   background-image: url(../img/contacts.jpg);
 }
 
-.footer {
+.index-menu__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
   -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
-  height: 10vh;
+  width: 100%;
+  height: 100%;
 
+  -webkit-transition: -webkit-transform 20s ease-out;
+  -o-transition: transform 20s ease-out;
+  transition: -webkit-transform 20s ease-out;
+  transition: transform 20s ease-out;
+  transition: transform 20s ease-out, -webkit-transform 20s ease-out;
+
+  color: #f7d0ab;
+  text-shadow: 0 0 5px #000000, 0 0 20px #000000;
+
+  font-family: "Noto Serif", serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.index-menu__link--active {
+  color: #ffffff;
+}
+
+.footer {
   background-color: #ff8800;
 }
 
 .footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  height: 10vh;
 
   text-align: center;
 }

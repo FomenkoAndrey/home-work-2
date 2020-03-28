@@ -1,28 +1,44 @@
-.main-menu {
+.index-menu {
   &__list {
     display: flex;
     flex-wrap: wrap;
+
     height: 80vh;
     padding: 0;
   }
 
   &__item {
+    position: relative;
+
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+
     width: 33.33%;
     height: 50%;
+
     list-style-type: none;
+
+    transition: transform 15s ease-out;
+    text-align: center;
+
     background-size: cover;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    color: #f7d0ab;
-    text-shadow: 0 0 10px black;
+
+    &:hover {
+      z-index: 1;
+
+      transform: scale(1.1);
+
+      box-shadow: 0 0 10px $color-dark;
+
+      a {
+        transform: translateY(-20px);
+      }
+    }
 
     &--index {
       background-image: url(../img/index.jpg);
+
       filter: grayscale(100%);
     }
 
@@ -44,6 +60,28 @@
 
     &--contacts {
       background-image: url(../img/contacts.jpg);
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    transition: transform 20s ease-out;
+
+    color: $color-gray;
+    text-shadow: 0 0 5px $color-dark, 0 0 20px $color-dark;
+
+    font-family: $font-header;
+    font-size: 50px;
+    font-weight: bold;
+
+    &--active {
+      color: $color-light;
     }
   }
 }

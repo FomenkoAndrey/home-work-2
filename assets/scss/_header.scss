@@ -4,18 +4,18 @@
   &__menu {
     @extend %container;
 
-    &-navbar {
-    }
+
 
     &-list {
       display: flex;
       align-items: center;
-      width: 100%;
-      padding: 0;
-      list-style: none;
-      min-height: 10vh;
       justify-content: center;
 
+      width: 100%;
+      min-height: 10vh;
+      padding: 0;
+
+      list-style: none;
     }
 
     &-item {
@@ -27,8 +27,33 @@
     }
 
     &-link {
+      position: relative;
+
       padding: 7.5px 15px;
+
       color: $color-light;
+      &::after {
+        position: absolute;
+        right: 100%;
+        bottom: 0;
+        left: 15px;
+
+        height: 2px;
+
+        content: "";
+        transition: right 0.25s;
+
+        opacity: 0;
+        background-color: $color-light;
+      }
+
+      &:hover {
+        &::after {
+          right: 15px;
+
+          opacity: 1;
+        }
+      }
 
       &--active {
         color: $color-dark;

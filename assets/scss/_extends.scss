@@ -1,20 +1,29 @@
 %container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 992px;
   width: 100%;
+  max-width: 992px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+%section-title {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #cccccc;
 }
 
 %page-body {
-  background-size: contain;
   background-position: 50% 50%;
+  background-size: contain;
 }
 
 %page-block {
   min-height: 80vh;
-  background-color: $color-light;
-  padding: 60px 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   text-align: justify;
-  font-family: 'Zilla Slab', serif;
+
+  background-color: $color-light;
   font-size: 1rem;
 }

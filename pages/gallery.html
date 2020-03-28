@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Галерея</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="page-gallery">
@@ -39,57 +40,44 @@
   </div>
 </header>
 
-<main class="main">
-  <section class="main__section">
-    <div class="main__section_imageGallery">
-      <div class="image-gallery">
-        <div class="image-gallery__block1">
-          <ul class="image-gallery__block1_list">
-            <li class="image-gallery__block1_list_li">
-              <a class="block1_list_li_a" href="#target1">
-                <h4>Слайдер 1</h4>
-              </a>
-              <a class="block1_list_li_a" href="../assets/img/1.jpg" target="_blank"
-                 title="Нажмите для просмотра изображения в полном размере">1.jpg 1920x1080</a>
-            </li>
-            <li class="image-gallery__block1_list_li">
-              <a class="block1_list_li_a" href="#target2">
-                <h4>Слайдер 2</h4>
-              </a>
-              <a class="block1_list_li_a" href="../assets/img/2.jpg" target="_blank"
-                 title="Нажмите для просмотра изображения в полном размере">2.jpg 1920x1080</a>
-            </li>
-            <li class="image-gallery__block1_list_li">
-              <a class="block1_list_li_a" href="#target3">
-                <h4>Слайдер 3</h4>
-              </a>
-              <a class="block1_list_li_a" href="../assets/img/3.png" target="_blank"
-                 title="Нажмите для просмотра изображения в полном размере">3.png 1920x1080</a>
-            </li>
-            <li class="image-gallery__block1_list_li">
-              <a class="block1_list_li_a" href="#target4">
-                <h4>Слайдер 4</h4>
-              </a>
-              <a class="block1_list_li_a" href="../assets/img/4.png" target="_blank"
-                 title="Нажмите для просмотра изображения в полном размере">4.png 1920x1080</a>
-            </li>
-          </ul>
+<main class="main container">
+  <section class="gallery">
+    <h1 class="gallery__title">Галлерея</h1>
+    <div class="gallery__slides">
+      <div class="gallery__slides-list">
+        <div class="gallery__slide-item">
+          <h4><a class="gallery__slide-item-anchor" href="#slide1">Слайд #1</a></h4>
+          <div><a class="gallery__slide-item-link" href="../assets/img/1.jpg" target="_blank"
+                  title="Нажмите для просмотра изображения в полном размере"><i class="fas fa-external-link-alt"></i> 1.jpg 1920x1080</a></div>
         </div>
-        <div class="image-gallery__block2">
-          <div class="image-gallery__block2_items">
-            <div class="image-gallery__block2_items_target" id="target1">
-              <img class="image-gallery__block2_items_img" src="../assets/img/1.jpg" alt="Галерея">
-            </div>
-            <div class="image-gallery__block2_items_target" id="target2">
-              <img class="image-gallery__block2_items_img" src="../assets/img/2.jpg" alt="Галерея">
-            </div>
-            <div class="image-gallery__block2_items_target" id="target3">
-              <img class="image-gallery__block2_items_img" src="../assets/img/3.png" alt="Галерея">
-            </div>
-            <div class="image-gallery__block2_items_target" id="target4">
-              <img class="image-gallery__block2_items_img" src="../assets/img/4.png" alt="Галерея">
-            </div>
-          </div>
+        <div class="gallery__slide-item">
+          <h4><a class="gallery__slide-item-anchor" href="#slide2">Слайд #2</a></h4>
+          <div><a class="gallery__slide-item-link" href="../assets/img/2.jpg" target="_blank"
+                  title="Нажмите для просмотра изображения в полном размере"><i class="fas fa-external-link-alt"></i> 2.jpg 1920x1080</a></div>
+        </div>
+        <div class="gallery__slide-item">
+          <h4><a class="gallery__slide-item-anchor" href="#slide3">Слайд #3 </a></h4>
+          <div><a class="gallery__slide-item-link" href="../assets/img/3.png" target="_blank"
+                  title="Нажмите для просмотра изображения в полном размере"><i class="fas fa-external-link-alt"></i> 3.png 1920x1080</a></div>
+        </div>
+        <div class="gallery__slide-item">
+          <h4><a class="gallery__slide-item-anchor" href="#slide4">Слайд #4</a></h4>
+          <div><a class="gallery__slide-item-link" href="../assets/img/4.png" target="_blank"
+                  title="Нажмите для просмотра изображения в полном размере"><i class="fas fa-external-link-alt"></i> 4.png 1920x1080</a></div>
+        </div>
+      </div>
+      <div class="gallery__slides-pictures">
+        <div class="gallery__slide-picture" id="slide1">
+          <img class="gallery__slide-picture-image" src="../assets/img/1.jpg" alt="Галерея">
+        </div>
+        <div class="gallery__slide-picture" id="slide2">
+          <img class="gallery__slide-picture-image" src="../assets/img/2.jpg" alt="Галерея">
+        </div>
+        <div class="gallery__slide-picture" id="slide3">
+          <img class="gallery__slide-picture-image" src="../assets/img/3.png" alt="Галерея">
+        </div>
+        <div class="gallery__slide-picture" id="slide4">
+          <img class="gallery__slide-picture-image" src="../assets/img/4.png" alt="Галерея">
         </div>
       </div>
     </div>
