@@ -7,68 +7,91 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   <title>Регистрация</title>
 </head>
-<body class="body_registration">
-  <header class="header">
-    <nav>
-      <ul class="header__menu">
-        <li class="menu__item"><a class="menu__item_link" href="../index.html">ГЛАВНАЯ</a></li>
-        <li class="menu__item"><a class="menu__item_link" href="../pages/articles.html">СТАТЬИ</a></li>
-        <li class="menu__item"><a class="menu__item_link" href="catalog.html">КАТАЛОГ</a></li>
-        <li class="menu__item"><a class="menu__item_link" href="image-gallery.html">ГАЛЕРЕЯ</a></li>
-        <li class="menu__item">РЕГИСТРАЦИЯ</li>
-        <li class="menu__item menu__item_last"><a class="menu__item_link" href="contacts.html">КОНТАКТЫ</a></li>
+<body class="page-registration">
+
+<header class="header">
+  <div class="header__menu">
+    <nav class="header__menu-navbar">
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a href="../index.html" class="header__menu-link">ГЛАВНАЯ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="articles.html" class="header__menu-link">СТАТЬИ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="catalog.html" class="header__menu-link">КАТАЛОГ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="gallery.html" class="header__menu-link">ГАЛЕРЕЯ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="registration.html" class="header__menu-link header__menu-link--active">РЕГИСТРАЦИЯ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="contacts.html" class="header__menu-link">КОНТАКТЫ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="page-nav.html" class="header__menu-link">НАВИГАЦИЯ</a>
+        </li>
       </ul>
     </nav>
-  </header>
-  <main class="main">
-    <div class="main__section">
-      <div class="main__section_registration">
-        <form class="registration__form" action="registration.php" method="post">
-          <fieldset class="registration__form">
-            <legend>&nbsp;Форма для регистрации&nbsp;</legend>
-            <fieldset class="registration__form_fieldset">
-              <legend><label class="registration__form_fieldset_legend">&nbsp;&nbsp;Шаг 1&nbsp;&nbsp;</label></legend>
-              <p>Имя: <input class="form_input" type="text" name="first_name" placeholder="Имя"></p>
-              <p>Фамилия: <input class="form_input" type="text" name="second_name" placeholder="Фамилия"></p>
-              <p>Отчество: <input class="form_input" type="text" name="patronymic" placeholder="Отчество"></p>
-              <p>Загрузите вашу фотографию<input class="form_input" type="file" name="avatar" accept="image/jpeg, image/png"></p>
-            </fieldset>
-            <fieldset class="registration__form_fieldset">
-              <legend><label class="registration__form_fieldset_legend">&nbsp;&nbsp;Шаг 2&nbsp;&nbsp;</label></legend>
-              <p>Почта: <input class="form_input" type="email" placeholder="Ваш E-mail"></p>
-              <p>Пароль: <input class="form_input" type="password"></p>
-              <p>Сайт: <input class="form_input" type="text" value="http://"></p>
-              <p>Выберите пол: 
-                <input type="text" list="gender">
-                <datalist id="gender">
-                  <option value="Мужской"></option>
-                  <option value="Женский"></option>
-                </datalist>
-              </p>
-              <p>Дата рождения: <input class="form_input" type="date" name="birthday" value="2000-01-01" min="1900-01-01"></p>
-            </fieldset>
-            <fieldset class="registration__form_fieldset">
-              <legend><label class="registration__form_fieldset_legend">&nbsp;&nbsp;Шаг 3&nbsp;&nbsp;</label></legend>
-              <div>Ваша любимая кухня: 
-                <p><input class="form_input" type="checkbox">Украинская</p>
-                <p><input class="form_input" type="checkbox">Японская</p>
-                <p><input class="form_input" type="checkbox">Средиземноморская</p>
-                <p><input class="form_input" type="checkbox">Индийская</p>
-                <textarea class="form_textarea" name="about_yourself" id="#" cols="70" rows="8" placeholder=" Добавьте немного о себе"></textarea>
-              </div>
-            </fieldset>
-            <div class="registration__form_buttons">
-              <input type="submit" value="Зарегистрироваться">
-              <input type="reset" value="Очистить форму">
+  </div>
+</header>
+
+<main class="main">
+  <div class="main__section">
+    <div class="main__section_registration">
+      <form class="registration__form" action="registration.php" method="post">
+        <fieldset class="registration__form">
+          <legend>&nbsp;Форма для регистрации&nbsp;</legend>
+          <fieldset class="registration__form_fieldset">
+            <legend><label class="registration__form_fieldset_legend">&nbsp;&nbsp;Шаг 1&nbsp;&nbsp;</label></legend>
+            <p>Имя: <input class="form_input" type="text" name="first_name" placeholder="Имя"></p>
+            <p>Фамилия: <input class="form_input" type="text" name="second_name" placeholder="Фамилия"></p>
+            <p>Отчество: <input class="form_input" type="text" name="patronymic" placeholder="Отчество"></p>
+            <p>Загрузите вашу фотографию<input class="form_input" type="file" name="avatar"
+                                               accept="image/jpeg, image/png"></p>
+          </fieldset>
+          <fieldset class="registration__form_fieldset">
+            <legend><label class="registration__form_fieldset_legend">&nbsp;&nbsp;Шаг 2&nbsp;&nbsp;</label></legend>
+            <p>Почта: <input class="form_input" type="email" placeholder="Ваш E-mail"></p>
+            <p>Пароль: <input class="form_input" type="password"></p>
+            <p>Сайт: <input class="form_input" type="text" value="http://"></p>
+            <p>Выберите пол:
+              <input type="text" list="gender">
+              <datalist id="gender">
+                <option value="Мужской"></option>
+                <option value="Женский"></option>
+              </datalist>
+            </p>
+            <p>Дата рождения: <input class="form_input" type="date" name="birthday" value="2000-01-01" min="1900-01-01">
+            </p>
+          </fieldset>
+          <fieldset class="registration__form_fieldset">
+            <legend><label class="registration__form_fieldset_legend">&nbsp;&nbsp;Шаг 3&nbsp;&nbsp;</label></legend>
+            <div>Ваша любимая кухня:
+              <p><input class="form_input" type="checkbox">Украинская</p>
+              <p><input class="form_input" type="checkbox">Японская</p>
+              <p><input class="form_input" type="checkbox">Средиземноморская</p>
+              <p><input class="form_input" type="checkbox">Индийская</p>
+              <textarea class="form_textarea" name="about_yourself" id="#" cols="70" rows="8"
+                        placeholder=" Добавьте немного о себе"></textarea>
             </div>
           </fieldset>
-        </form>
-      </div>
+          <div class="registration__form_buttons">
+            <input type="submit" value="Зарегистрироваться">
+            <input type="reset" value="Очистить форму">
+          </div>
+        </fieldset>
+      </form>
     </div>
-  </main>
-  <footer class="footer">
-    <div class="menu__item menu__item_last footer__menu"><a class="menu__item_link" href="../pages/page-nav.html">НАВИГАЦИЯ</a></div>
-    <p class="footer__copyright">&copy; Maksim Borovik</p>
-  </footer>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer__copyright">&copy; Maksim Borovik</div>
+</footer>
+
 </body>
 </html>

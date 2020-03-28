@@ -1,0 +1,49 @@
+.main-menu {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 33.33%;
+    height: 50%;
+    list-style-type: none;
+    background-size: cover;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #f7d0ab;
+    text-shadow: 0 0 10px black;
+
+    &--index {
+      background-image: url(../img/index.jpg);
+      filter: grayscale(100%);
+    }
+
+    &--articles {
+      background-image: url(../img/articles.jpg);
+    }
+
+    &--catalog {
+      background-image: url(../img/catalog.jpg);
+    }
+
+    &--gallery {
+      background-image: url(../img/image_gallery.jpg);
+    }
+
+    &--registration {
+      background-image: url(../img/registration.jpg);
+    }
+
+    &--contacts {
+      background-image: url(../img/contacts.jpg);
+    }
+  }
+}

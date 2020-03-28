@@ -1,0 +1,39 @@
+.header {
+  background-color: $color-accent;
+
+  &__menu {
+    @extend %container;
+
+    &-navbar {
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      list-style: none;
+      min-height: 10vh;
+      justify-content: center;
+
+    }
+
+    &-item {
+      border-right: 1px solid $color-dark;
+
+      &:last-of-type {
+        border-right: none;
+      }
+    }
+
+    &-link {
+      padding: 7.5px 15px;
+      color: $color-light;
+
+      &--active {
+        color: $color-dark;
+      }
+    }
+  }
+}
+

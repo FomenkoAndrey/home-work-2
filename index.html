@@ -7,23 +7,54 @@
   <title>Урок 2</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-  <header class="header"></header>
-  <main>
-    <nav>
-      <ul class="indexMenu">
-        <li class="indexMenu__item index">ГЛАВНАЯ</li>
-        <li class="indexMenu__item articles"><a class="link" href="pages/articles.html">СТАТЬИ</a></li>
-        <li class="indexMenu__item catalog"><a class="link" href="pages/catalog.html">КАТАЛОГ</a></li>
-        <li class="indexMenu__item image_gallery"><a class="link" href="pages/image-gallery.html">ГАЛЕРЕЯ</a></li>
-        <li class="indexMenu__item registration"><a class="link" href="pages/registration.html">РЕГИСТРАЦИЯ</a></li>
-        <li class="indexMenu__item contacts"><a class="link" href="pages/contacts.html">КОНТАКТЫ</a></li>
+<body >
+
+<header class="header">
+  <div class="header__menu">
+    <nav class="header__menu-navbar">
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a href="index.html" class="header__menu-link header__menu-link--active">ГЛАВНАЯ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="pages/articles.html" class="header__menu-link">СТАТЬИ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="pages/catalog.html" class="header__menu-link">КАТАЛОГ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="pages/gallery.html" class="header__menu-link">ГАЛЕРЕЯ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="pages/registration.html" class="header__menu-link">РЕГИСТРАЦИЯ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="pages/contacts.html" class="header__menu-link">КОНТАКТЫ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="pages/page-nav.html" class="header__menu-link">НАВИГАЦИЯ</a>
+        </li>
       </ul>
     </nav>
-  </main>
-  <footer class="footer">
-    <div class="menu__item menu__item_last footer__menu"><a class="menu__item_link" href="pages/page-nav.html">НАВИГАЦИЯ</a></div>
-    <p class="footer__copyright">&copy; Maksim Borovik</p>
-  </footer>
+  </div>
+</header>
+
+<main>
+  <nav class="main-menu">
+    <ul class="main-menu__list">
+      <li class="main-menu__item main-menu__item--index">ГЛАВНАЯ</li>
+      <li class="main-menu__item main-menu__item--articles"><a class="link" href="pages/articles.html">СТАТЬИ</a></li>
+      <li class="main-menu__item main-menu__item--catalog"><a class="link" href="pages/catalog.html">КАТАЛОГ</a></li>
+      <li class="main-menu__item main-menu__item--gallery"><a class="link" href="pages/gallery.html">ГАЛЕРЕЯ</a></li>
+      <li class="main-menu__item main-menu__item--registration"><a class="link" href="pages/registration.html">РЕГИСТРАЦИЯ</a></li>
+      <li class="main-menu__item main-menu__item--contacts"><a class="link" href="pages/contacts.html">КОНТАКТЫ</a></li>
+    </ul>
+  </nav>
+</main>
+
+<footer class="footer">
+  <div class="footer__copyright">&copy; Maksim Borovik</div>
+</footer>
+
 </body>
 </html>
