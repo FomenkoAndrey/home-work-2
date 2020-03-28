@@ -52,28 +52,28 @@
 }
 
 .index {
-  background-image: url(../image/index.jpg);
+  background-image: url(../img/index.jpg);
   filter: grayscale(100%);
 }
 
 .articles {
-  background-image: url(../image/articles.jpg);
+  background-image: url(../img/articles.jpg);
 }
 
 .catalog {
-  background-image: url(../image/catalog.jpg);
+  background-image: url(../img/catalog.jpg);
 }
 
 .image_gallery {
-  background-image: url(../image/image_gallery.jpg);
+  background-image: url(../img/image_gallery.jpg);
 }
 
 .registration {
-  background-image: url(../image/registration.jpg);
+  background-image: url(../img/registration.jpg);
 }
 
 .contacts {
-  background-image: url(../image/contacts.jpg);
+  background-image: url(../img/contacts.jpg);
 }
 
 .link {
@@ -88,27 +88,27 @@
 }
 
 .body_articles {
-  background: url(../image/articles.jpg);
+  background: url(../img/articles.jpg);
 }
 
 .body_catalog {
-  background: url(../image/catalog.jpg);
+  background: url(../img/catalog.jpg);
 }
 
 .body_imageGallery {
-  background: url(../image/image_gallery.jpg);
+  background: url(../img/image_gallery.jpg);
 }
 
 .body_contacts {
-  background: url(../image/contacts.jpg);
+  background: url(../img/contacts.jpg);
 }
 
 .body_registration {
-  background: url(../image/registration.jpg);
+  background: url(../img/registration.jpg);
 }
 
 .body_navigation {
-  background: url(../image/navigation.jpg);
+  background: url(../img/navigation.jpg);
 }
 
 /* Header menu */
