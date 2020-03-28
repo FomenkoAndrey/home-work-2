@@ -40,54 +40,77 @@
   </div>
 </header>
 
-<main class="main">
-  <div class="main__section">
-    <div class="main__section_registration">
-      <form class="registration__form" action="registration.php" method="post">
-        <fieldset class="registration__form">
-          <legend>&nbsp;Форма для регистрации&nbsp;</legend>
-          <fieldset class="registration__form_fieldset">
-            <legend><label class="registration__form_fieldset_legend">&nbsp;&nbsp;Шаг 1&nbsp;&nbsp;</label></legend>
-            <p>Имя: <input class="form_input" type="text" name="first_name" placeholder="Имя"></p>
-            <p>Фамилия: <input class="form_input" type="text" name="second_name" placeholder="Фамилия"></p>
-            <p>Отчество: <input class="form_input" type="text" name="patronymic" placeholder="Отчество"></p>
-            <p>Загрузите вашу фотографию<input class="form_input" type="file" name="avatar"
-                                               accept="image/jpeg, image/png"></p>
-          </fieldset>
-          <fieldset class="registration__form_fieldset">
-            <legend><label class="registration__form_fieldset_legend">&nbsp;&nbsp;Шаг 2&nbsp;&nbsp;</label></legend>
-            <p>Почта: <input class="form_input" type="email" placeholder="Ваш E-mail"></p>
-            <p>Пароль: <input class="form_input" type="password"></p>
-            <p>Сайт: <input class="form_input" type="text" value="http://"></p>
-            <p>Выберите пол:
-              <input type="text" list="gender">
-              <datalist id="gender">
-                <option value="Мужской"></option>
-                <option value="Женский"></option>
-              </datalist>
-            </p>
-            <p>Дата рождения: <input class="form_input" type="date" name="birthday" value="2000-01-01" min="1900-01-01">
-            </p>
-          </fieldset>
-          <fieldset class="registration__form_fieldset">
-            <legend><label class="registration__form_fieldset_legend">&nbsp;&nbsp;Шаг 3&nbsp;&nbsp;</label></legend>
-            <div>Ваша любимая кухня:
-              <p><input class="form_input" type="checkbox">Украинская</p>
-              <p><input class="form_input" type="checkbox">Японская</p>
-              <p><input class="form_input" type="checkbox">Средиземноморская</p>
-              <p><input class="form_input" type="checkbox">Индийская</p>
-              <textarea class="form_textarea" name="about_yourself" id="#" cols="70" rows="8"
-                        placeholder=" Добавьте немного о себе"></textarea>
-            </div>
-          </fieldset>
-          <div class="registration__form_buttons">
-            <input type="submit" value="Зарегистрироваться">
-            <input type="reset" value="Очистить форму">
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </div>
+<main class="main container">
+  <section class="registration">
+    <h1 class="registration__title">Форма для регистрации</h1>
+
+    <form action="register.php" method="GET">
+      <fieldset>
+        <legend>#1 Базовые поля ввода</legend>
+        <label>Логин: <input required name="login" value="userName" minlength="3" maxlength="10"
+                             placeholder="Введите логин" type="text"></label>
+        <label>Пароль: <input name="passw" minlength="5" maxlength="10" placeholder="Пароль" type="password"></label>
+        <label>Возраст: <input min="1" max="122" value="25" placeholder="Возраст" type="number"></label>
+        <label>Имейл: <input placeholder="Имейл" type="email"></label>
+        <label>Поиск: <input placeholder="Поиск" type="search"></label>
+        <label>Телефон: <input placeholder="Телефон" type="tel"></label>
+        <label>Год рождения: <input type="date"></label>
+        <label>Дата поступления в вуз: <input type="month"></label>
+        <label>Ваша аватарка: <input type="file"></label>
+        <label class="hidden">Проверка на человечность: <input type="hidden"></label>
+      </fieldset>
+
+      <fieldset class="checkbox">
+        <legend>#2 Множественный выбор</legend>
+        <p>Выберите предпочитаемую кухню:</p>
+        <label><input checked name="ua" value="ukrainian" type="checkbox">Украинская</label>
+        <label><input name="gr" value="georgian" type="checkbox">Грузинская</label>
+        <label><input name="it" value="italian" type="checkbox">Итальянская</label>
+      </fieldset>
+
+      <fieldset class="radio">
+        <legend>#3 Единственный выбор</legend>
+        <p>Выберите ваш пол:</p>
+        <input id="rb1" type="radio" name="gender" value="male">
+        <label for="rb1">Мужской</label>
+        <input id="rb2" type="radio" name="gender" value="female">
+        <label for="rb2">Женский</label>
+        <input disabled id="rb3" type="radio" name="gender" value="unknown">
+        <label for="rb3">Неправильный</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>#4 Открывающийся список</legend>
+        <label for="sel">Года выпуска авто:</label>
+        <select name="sel" id="sel">
+          <option selected disabled value="">Выбери год</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>#5 Многострочный текст</legend>
+        <label for="txt">Подробная информация о себе:</label>
+        <textarea placeholder="Введите информацию о себе..." name="txt" id="txt" cols="20" rows="7"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>#6 Кнопки управления формой</legend>
+        <button type="submit">Кнопка button type submit</button>
+        <button type="reset">Кнопка button type reset</button>
+        <button onclick="prompt('Who are you?', 'Im real web developer!');" type="button">Кнопка button type
+          button</button>
+      </fieldset>
+    </form>
+  </section>
 </main>
 
 <footer class="footer">

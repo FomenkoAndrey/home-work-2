@@ -282,7 +282,8 @@
 
 .news__title,
 .catalog__title,
-.gallery__title {
+.gallery__title,
+.registration__title {
   margin-bottom: 30px;
 
   border-bottom: 1px solid #cccccc;
@@ -308,6 +309,17 @@
   background-color: #ffffff;
 
   font-size: 1rem;
+}
+
+button,
+select,
+input {
+  display: block;
+
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 7px 15px;
 }
 
 * {
@@ -344,6 +356,56 @@ a {
   text-decoration: none;
 
   color: #086fa1;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 20px auto 30px;
+
+  border: 1px solid #ff8800;
+  border-radius: 4px;
+  background-color: #f7d0ab;
+}
+
+legend {
+  background: #f7d0ab;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f7d0ab), color-stop(60%, #ffffff));
+  background: -o-linear-gradient(bottom, #f7d0ab 50%, #ffffff 60%);
+  background: linear-gradient(0deg, #f7d0ab 50%, #ffffff 60%);
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+
+  width: auto;
+}
+
+label {
+  display: block;
+
+  text-align: left;
+}
+
+.radio label,
+.checkbox label {
+  display: inline-block;
+}
+
+.radio label:not(:last-of-type),
+.checkbox label:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+textarea {
+  width: 100%;
+
+  resize: vertical;
 }
 
 .hidden {

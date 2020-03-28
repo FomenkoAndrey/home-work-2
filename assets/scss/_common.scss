@@ -33,6 +33,62 @@ a {
   color: $color-primary;
 }
 
+fieldset {
+  max-width: 500px;
+  margin: 20px auto 30px;
+  background-color: $color-gray;
+  border-radius: 4px;
+  border: 1px solid $color-accent;
+}
+
+legend {
+  background: $color-gray;
+  background: linear-gradient(0deg, $color-gray 50%, $color-light 60%);
+}
+
+button {
+  @extend %inputs;
+}
+
+select {
+  @extend %inputs;
+}
+
+input {
+  @extend %inputs;
+
+  &[type="file"] {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  &[type="radio"],
+  &[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+  }
+
+}
+
+label {
+  display: block;
+  text-align: left;
+
+  .radio &,
+  .checkbox & {
+    display: inline-block;
+
+    &:not(:last-of-type) {
+      margin-right: 15px;
+    }
+  }
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+
 .container {
   @extend %container;
   @extend %page-block;
@@ -41,6 +97,7 @@ a {
 .hidden {
   display: none;
 }
+
 
 .page-articles {
   background-image: url(../img/articles.jpg);
