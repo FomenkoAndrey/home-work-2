@@ -6,6 +6,7 @@
   &__article {
     margin-bottom: $gap / 3 * 4;
     padding-bottom: $gap / 3 * 2;
+
     border-bottom: 1px solid #eeeeee;
   }
 
@@ -29,9 +30,6 @@
     &-body {
       flex: 1 0 33%;
     }
-
-    &-list {
-    }
   }
 }
 
@@ -47,13 +45,15 @@
 
     &-list {
       flex-basis: $block-size;
+
       width: $block-size;
     }
 
     &-pictures {
+      position: relative;
+
       flex-basis: calc(100% - #{$block-size});
       flex-grow: 1;
-      position: relative;
     }
   }
 
@@ -67,23 +67,28 @@
 
   &__slide-picture {
     position: absolute;
-    opacity: 0;
     z-index: -1;
+
     transition: opacity 0.5s;
+
+    opacity: 0;
 
     &-image {
       width: 100%;
+
       border-radius: 7px;
     }
 
     &:first-of-type:not(:target) {
-      opacity: 1;
       z-index: 1;
+
+      opacity: 1;
     }
 
     &:target {
-      opacity: 1;
       z-index: 1;
+
+      opacity: 1;
     }
   }
 }
@@ -107,9 +112,10 @@
 
   &__form {
     padding: ($gap / 4) ($gap / 2);
-    background-color: darken($color-light, 3%);
-    border-radius: 4px;
+
     border: 1px solid darken($color-light, 15%);
+    border-radius: 4px;
+    background-color: darken($color-light, 3%);
 
     &-textarea {
       margin-bottom: $gap / 2;
@@ -123,15 +129,18 @@
   }
 
   &__list {
-    list-style: none;
-    padding: 0;
     display: flex;
+
+    padding: 0;
+
+    list-style: none;
   }
 
   &__item {
     &::after {
-      content: ", ";
       margin-right: $gap / 2;
+
+      content: ", ";
     }
   }
 

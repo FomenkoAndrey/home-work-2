@@ -1,10 +1,11 @@
 .footer {
-  background-color: #ff8800;
   position: fixed;
+  z-index: 10;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 10;
+
+  background-color: #ff8800;
 
   &__copyright {
     display: flex;

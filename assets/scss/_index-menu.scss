@@ -1,7 +1,8 @@
 .index-menu {
+  height: 100vh;
   padding-top: $header-hight;
   padding-bottom: $footer-hight;
-  height: 100vh;;
+
   &__list {
     display: flex;
     flex-wrap: wrap;

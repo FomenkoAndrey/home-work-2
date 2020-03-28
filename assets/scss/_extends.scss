@@ -9,6 +9,7 @@
 
 %section-title {
   margin-bottom: $gap;
+
   border-bottom: 1px solid #cccccc;
 }
 
@@ -25,13 +26,15 @@
   text-align: justify;
 
   background-color: $color-light;
+
   font-size: 1rem;
 }
 
 %inputs {
+  display: block;
+
   width: 100%;
-  padding: ($gap / 4) ($gap / 2);
   margin-top: 5px;
   margin-bottom: 10px;
-  display: block;
+  padding: ($gap / 4) ($gap / 2);
 }
