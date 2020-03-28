@@ -4,17 +4,13 @@
   }
 
   &__article {
-    margin-bottom: 40px;
-    padding-bottom: 20px;
+    margin-bottom: $gap / 3 * 4;
+    padding-bottom: $gap / 3 * 2;
     border-bottom: 1px solid #eeeeee;
   }
 
-  .news__article-title {
-    margin-bottom: 20px;
-  }
-
   .news__article-description {
-    margin-bottom: 20px;
+    margin-bottom: $gap / 3 * 2;
   }
 
   .news__article-title-link {
@@ -95,5 +91,51 @@
 .registration {
   &__title {
     @extend %section-title;
+  }
+}
+
+.contacts {
+  &__title {
+    @extend %section-title;
+  }
+
+  &__address,
+  &__time,
+  &__map {
+    margin-bottom: $gap;
+  }
+
+  &__form {
+    padding: ($gap / 4) ($gap / 2);
+    background-color: darken($color-light, 3%);
+    border-radius: 4px;
+    border: 1px solid darken($color-light, 15%);
+
+    &-textarea {
+      margin-bottom: $gap / 2;
+    }
+  }
+}
+
+.navigation {
+  &__menu {
+    margin-bottom: $gap;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  &__item {
+    &::after {
+      content: ", ";
+      margin-right: $gap / 2;
+    }
+  }
+
+  &__link-inner {
+    font-weight: 700;
   }
 }

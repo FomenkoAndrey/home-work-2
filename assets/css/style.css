@@ -283,7 +283,8 @@
 .news__title,
 .catalog__title,
 .gallery__title,
-.registration__title {
+.registration__title,
+.contacts__title {
   margin-bottom: 30px;
 
   border-bottom: 1px solid #cccccc;
@@ -300,9 +301,9 @@
 }
 
 .container {
-  min-height: 80vh;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  min-height: 100vh;
+  padding-top: 160px;
+  padding-bottom: 120px;
 
   text-align: justify;
 
@@ -313,13 +314,14 @@
 
 button,
 select,
-input {
+input,
+textarea {
   display: block;
 
   width: 100%;
   margin-top: 5px;
   margin-bottom: 10px;
-  padding: 7px 15px;
+  padding: 7.5px 15px;
 }
 
 * {
@@ -342,14 +344,23 @@ body {
 }
 
 h1 {
+  margin-bottom: 20px;
+
   font-family: "Noto Serif", serif;
   font-size: 2rem;
   font-weight: 400;
 }
 
 h2 {
+  margin-bottom: 15px;
+
   font-family: "Noto Serif", serif;
   font-weight: 400;
+}
+
+p {
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
 }
 
 a {
@@ -359,19 +370,23 @@ a {
 }
 
 fieldset {
-  max-width: 500px;
   margin: 20px auto 30px;
+  padding: 7.5px 15px;
 
-  border: 1px solid #ff8800;
+  border: 1px solid #d9d9d9;
   border-radius: 4px;
-  background-color: #f7d0ab;
+  background-color: #f7f7f7;
+}
+
+fieldset:last-of-type {
+  margin-bottom: 0;
 }
 
 legend {
-  background: #f7d0ab;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f7d0ab), color-stop(60%, #ffffff));
-  background: -o-linear-gradient(bottom, #f7d0ab 50%, #ffffff 60%);
-  background: linear-gradient(0deg, #f7d0ab 50%, #ffffff 60%);
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f7f7f7), color-stop(60%, #ffffff));
+  background: -o-linear-gradient(bottom, #f7f7f7 50%, #ffffff 60%);
+  background: linear-gradient(0deg, #f7f7f7 50%, #ffffff 60%);
 }
 
 input[type="file"] {
@@ -403,13 +418,33 @@ label {
 }
 
 textarea {
-  width: 100%;
-
   resize: vertical;
 }
 
 .hidden {
   display: none;
+}
+
+.google-map {
+  width: 100%;
+}
+
+.button-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+
+.button-set button {
+  -ms-flex-preferred-size: calc(33.33% - 15px);
+  flex-basis: calc(33.33% - 15px);
+
+  width: calc(33.33% - 15px);
+  margin-right: 7.5px;
+  margin-left: 7.5px;
 }
 
 .page-articles {
@@ -437,6 +472,12 @@ textarea {
 }
 
 .header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+
   background-color: #ff8800;
 }
 
@@ -452,7 +493,7 @@ textarea {
   justify-content: center;
 
   width: 100%;
-  min-height: 10vh;
+  min-height: 100px;
   padding: 0;
 
   list-style: none;
@@ -506,10 +547,6 @@ textarea {
   padding-bottom: 20px;
 
   border-bottom: 1px solid #eeeeee;
-}
-
-.news .news__article-title {
-  margin-bottom: 20px;
 }
 
 .news .news__article-description {
@@ -592,6 +629,99 @@ textarea {
   opacity: 1;
 }
 
+.contacts__address,
+.contacts__time,
+.contacts__map {
+  margin-bottom: 30px;
+}
+
+.contacts__form {
+  padding: 7.5px 15px;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+.contacts__form-textarea {
+  margin-bottom: 15px;
+}
+
+.navigation__menu {
+  margin-bottom: 30px;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.navigation__item::after {
+  margin-right: 15px;
+
+  content: ", ";
+}
+
+.navigation__link-inner {
+  font-weight: 700;
+}
+
+.page-content__body {
+  margin-bottom: 60px;
+}
+
+.page-content__comments-title {
+  margin-bottom: 15px;
+
+  font-size: 1.5rem;
+}
+
+.page-content__comments-item {
+  margin-bottom: 30px;
+
+  border-top: 1px solid #f7f7f7;
+}
+
+.page-content__comments-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-content__comments-avatar {
+  -ms-flex-preferred-size: 75px;
+  flex-basis: 75px;
+
+  padding-right: 15px;
+}
+
+.page-content__comments-image {
+  width: 75px;
+}
+
+.page-content__comments-message {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+
+  margin-top: 0;
+}
+
+.page-content__comments-controls {
+  text-align: right;
+}
+
+.index-menu {
+  height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
 .index-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,7 +729,7 @@ textarea {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  height: 80vh;
+  height: 100%;
   padding: 0;
 }
 
@@ -622,11 +752,11 @@ textarea {
 
   list-style-type: none;
 
-  -webkit-transition: -webkit-transform 15s ease-out;
-  -o-transition: transform 15s ease-out;
-  transition: -webkit-transform 15s ease-out;
-  transition: transform 15s ease-out;
-  transition: transform 15s ease-out, -webkit-transform 15s ease-out;
+  -webkit-transition: -webkit-transform 10s ease-out;
+  -o-transition: transform 10s ease-out;
+  transition: -webkit-transform 10s ease-out;
+  transition: transform 10s ease-out;
+  transition: transform 10s ease-out, -webkit-transform 10s ease-out;
   text-align: center;
 
   background-size: cover;
@@ -644,9 +774,9 @@ textarea {
 }
 
 .index-menu__item:hover a {
-  -webkit-transform: translateY(-20px);
-  -ms-transform: translateY(-20px);
-  transform: translateY(-20px);
+  -webkit-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  transform: translateY(-30%);
 }
 
 .index-menu__item--index {
@@ -690,11 +820,11 @@ textarea {
   width: 100%;
   height: 100%;
 
-  -webkit-transition: -webkit-transform 20s ease-out;
-  -o-transition: transform 20s ease-out;
-  transition: -webkit-transform 20s ease-out;
-  transition: transform 20s ease-out;
-  transition: transform 20s ease-out, -webkit-transform 20s ease-out;
+  -webkit-transition: -webkit-transform 10s ease-out;
+  -o-transition: transform 10s ease-out;
+  transition: -webkit-transform 10s ease-out;
+  transition: transform 10s ease-out;
+  transition: transform 10s ease-out, -webkit-transform 10s ease-out;
 
   color: #f7d0ab;
   text-shadow: 0 0 5px #000000, 0 0 20px #000000;
@@ -709,6 +839,12 @@ textarea {
 }
 
 .footer {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
   background-color: #ff8800;
 }
 
@@ -726,7 +862,7 @@ textarea {
   -ms-flex-pack: center;
   justify-content: center;
 
-  height: 10vh;
+  height: 60px;
 
   text-align: center;
 }

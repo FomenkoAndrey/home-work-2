@@ -21,11 +21,18 @@ h1 {
   font-family: $font-header;
   font-size: 2rem;
   font-weight: 400;
+  margin-bottom: $gap / 3 * 2;
 }
 
 h2 {
   font-family: $font-header;
   font-weight: 400;
+  margin-bottom: $gap / 2;
+}
+
+p {
+  margin-top: ($gap / 4);
+  margin-bottom: ($gap / 4);
 }
 
 a {
@@ -34,16 +41,20 @@ a {
 }
 
 fieldset {
-  max-width: 500px;
-  margin: 20px auto 30px;
-  background-color: $color-gray;
+  margin: ($gap / 3 * 2) auto $gap;
+  background-color: darken($color-light, 3%);
   border-radius: 4px;
-  border: 1px solid $color-accent;
+  border: 1px solid darken($color-light, 15%);
+  padding: ($gap / 4) ($gap / 2);
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 legend {
-  background: $color-gray;
-  background: linear-gradient(0deg, $color-gray 50%, $color-light 60%);
+  background: darken($color-light, 3%);
+  background: linear-gradient(0deg, darken($color-light, 3%) 50%, $color-light 60%);
 }
 
 button {
@@ -85,7 +96,7 @@ label {
 }
 
 textarea {
-  width: 100%;
+  @extend %inputs ;
   resize: vertical;
 }
 
@@ -98,6 +109,22 @@ textarea {
   display: none;
 }
 
+.google-map {
+  width: 100%;
+}
+
+.button-set {
+  display: flex;
+  margin-left: -$gap / 4;
+  margin-right: -$gap / 4;
+
+  button {
+    flex-basis: calc(33.33% - 15px);
+    width: calc(33.33% - 15px);
+    margin-left: $gap / 4;
+    margin-right: $gap / 4;
+  }
+}
 
 .page-articles {
   background-image: url(../img/articles.jpg);

@@ -1,0 +1,41 @@
+.page-content {
+  &__body {
+    margin-bottom: $gap * 2;
+  }
+
+  &__comments {
+    &-title {
+      font-size: 1.5rem;
+      margin-bottom: $gap / 2;
+    }
+
+    &-item {
+      margin-bottom: $gap;
+      border-top: 1px solid darken($color-light, 3%);
+    }
+
+    &-content {
+      display: flex;
+    }
+
+    &-avatar {
+      flex-basis: 75px;
+      padding-right: $gap / 2;
+    }
+
+    &-image {
+      width: 75px;
+    }
+
+    &-message {
+      flex-grow: 1;
+      margin-top: 0;
+    }
+
+    &-controls {
+      text-align: right;
+    }
+  }
+}
+
+

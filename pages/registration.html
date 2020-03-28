@@ -42,7 +42,7 @@
 
 <main class="main container">
   <section class="registration">
-    <h1 class="registration__title">Форма для регистрации</h1>
+    <h1 class="registration__title">Форма регистрации</h1>
 
     <form action="register.php" method="GET">
       <fieldset>
@@ -50,14 +50,14 @@
         <label>Логин: <input required name="login" value="userName" minlength="3" maxlength="10"
                              placeholder="Введите логин" type="text"></label>
         <label>Пароль: <input name="passw" minlength="5" maxlength="10" placeholder="Пароль" type="password"></label>
-        <label>Возраст: <input min="1" max="122" value="25" placeholder="Возраст" type="number"></label>
-        <label>Имейл: <input placeholder="Имейл" type="email"></label>
-        <label>Поиск: <input placeholder="Поиск" type="search"></label>
-        <label>Телефон: <input placeholder="Телефон" type="tel"></label>
-        <label>Год рождения: <input type="date"></label>
-        <label>Дата поступления в вуз: <input type="month"></label>
-        <label>Ваша аватарка: <input type="file"></label>
-        <label class="hidden">Проверка на человечность: <input type="hidden"></label>
+        <label>Возраст: <input name="age" min="1" max="122" value="25" placeholder="Возраст" type="number"></label>
+        <label>Имейл: <input name="email" placeholder="Имейл" type="email"></label>
+        <label>Поиск: <input name="search" placeholder="Поиск" type="search"></label>
+        <label>Телефон: <input name="phone" placeholder="Телефон" type="tel"></label>
+        <label>Год рождения: <input name="date" type="date"></label>
+        <label>Дата поступления в вуз: <input name="month" type="month"></label>
+        <label>Ваша аватарка: <input name="file" type="file"></label>
+        <label class="hidden">Проверка на человечность: <input name="hidden" type="hidden"></label>
       </fieldset>
 
       <fieldset class="checkbox">
@@ -66,6 +66,10 @@
         <label><input checked name="ua" value="ukrainian" type="checkbox">Украинская</label>
         <label><input name="gr" value="georgian" type="checkbox">Грузинская</label>
         <label><input name="it" value="italian" type="checkbox">Итальянская</label>
+        <label><input name="fr" value="french" type="checkbox">Французская</label>
+        <label><input name="us" value="american" type="checkbox">Американская</label>
+        <label><input name="jp" value="japanese" type="checkbox">Японская</label>
+        <label><input name="ch" value="chinese" type="checkbox">Китайская</label>
       </fieldset>
 
       <fieldset class="radio">
@@ -75,8 +79,6 @@
         <label for="rb1">Мужской</label>
         <input id="rb2" type="radio" name="gender" value="female">
         <label for="rb2">Женский</label>
-        <input disabled id="rb3" type="radio" name="gender" value="unknown">
-        <label for="rb3">Неправильный</label>
       </fieldset>
 
       <fieldset>
@@ -104,10 +106,11 @@
 
       <fieldset>
         <legend>#6 Кнопки управления формой</legend>
-        <button type="submit">Кнопка button type submit</button>
-        <button type="reset">Кнопка button type reset</button>
-        <button onclick="prompt('Who are you?', 'Im real web developer!');" type="button">Кнопка button type
-          button</button>
+        <div class="button-set">
+          <button type="submit">Отправить</button>
+          <button type="reset">Сбросить</button>
+          <button onclick="prompt('Who are you?', 'Im real web developer!');" type="button">Потренироваться</button>
+        </div>
       </fieldset>
     </form>
   </section>

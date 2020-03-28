@@ -1,5 +1,10 @@
 .footer {
   background-color: #ff8800;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
 
   &__copyright {
     display: flex;
@@ -7,7 +12,7 @@
     flex-grow: 1;
     justify-content: center;
 
-    height: 10vh;
+    height: $footer-hight;
 
     text-align: center;
 

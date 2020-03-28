@@ -1,14 +1,14 @@
 %container {
   width: 100%;
-  max-width: 992px;
+  max-width: $max-width;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: $gap;
+  padding-left: $gap;
 }
 
 %section-title {
-  margin-bottom: 30px;
+  margin-bottom: $gap;
   border-bottom: 1px solid #cccccc;
 }
 
@@ -18,9 +18,9 @@
 }
 
 %page-block {
-  min-height: 80vh;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  min-height: 100vh;
+  padding-top: $header-hight + $gap * 2;
+  padding-bottom: $footer-hight + $gap * 2;
 
   text-align: justify;
 
@@ -30,7 +30,7 @@
 
 %inputs {
   width: 100%;
-  padding: 7px 15px;
+  padding: ($gap / 4) ($gap / 2);
   margin-top: 5px;
   margin-bottom: 10px;
   display: block;
