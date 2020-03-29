@@ -13,7 +13,7 @@
     &-item {
       margin-bottom: $gap;
 
-      border-top: 1px solid darken($color-light, 3%);
+      border-top: 1px solid $color-gray-light;
     }
 
     &-content {

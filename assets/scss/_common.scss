@@ -46,9 +46,9 @@ fieldset {
   margin: ($gap / 3 * 2) auto $gap;
   padding: ($gap / 4) ($gap / 2);
 
-  border: 1px solid darken($color-light, 15%);
+  border: 1px solid $color-gray-dark;
   border-radius: 4px;
-  background-color: darken($color-light, 3%);
+  background-color: $color-gray-light;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -56,8 +56,8 @@ fieldset {
 }
 
 legend {
-  background: darken($color-light, 3%);
-  background: linear-gradient(0deg, darken($color-light, 3%) 50%, $color-light 60%);
+  background: $color-gray-light;
+  background: linear-gradient(0deg, $color-gray-light 50%, $color-light 60%);
 }
 
 button {

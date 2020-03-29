@@ -24,9 +24,11 @@
     @extend %section-title;
   }
 
-  &__category {
+  &__categories {
     display: flex;
+  }
 
+  &__category {
     &-body {
       flex: 1 0 33%;
     }
@@ -57,38 +59,40 @@
     }
   }
 
-  &__slide-item {
-    margin-bottom: 30px;
+  &__slide {
+    &-item {
+      margin-bottom: 30px;
+    }
 
     &-anchor {
       font-size: 1.125rem;
     }
-  }
 
-  &__slide-picture {
-    position: absolute;
-    z-index: -1;
+    &-picture {
+      position: absolute;
+      z-index: -1;
 
-    transition: opacity 0.5s;
+      transition: opacity 0.5s;
 
-    opacity: 0;
+      opacity: 0;
+
+      &:first-of-type:not(:target) {
+        z-index: 1;
+
+        opacity: 1;
+      }
+
+      &:target {
+        z-index: 1;
+
+        opacity: 1;
+      }
+    }
 
     &-image {
       width: 100%;
 
       border-radius: 7px;
-    }
-
-    &:first-of-type:not(:target) {
-      z-index: 1;
-
-      opacity: 1;
-    }
-
-    &:target {
-      z-index: 1;
-
-      opacity: 1;
     }
   }
 }
@@ -113,9 +117,9 @@
   &__form {
     padding: ($gap / 4) ($gap / 2);
 
-    border: 1px solid darken($color-light, 15%);
+    border: 1px solid $color-gray-dark;
     border-radius: 4px;
-    background-color: darken($color-light, 3%);
+    background-color: $color-gray-light;
 
     &-textarea {
       margin-bottom: $gap / 2;
@@ -124,6 +128,10 @@
 }
 
 .navigation {
+  &__title {
+    @extend %section-title;
+  }
+
   &__menu {
     margin-bottom: $gap;
   }
@@ -144,7 +152,13 @@
     }
   }
 
-  &__link-inner {
+  &__back2top {
     font-weight: 700;
+  }
+}
+
+.page-content {
+  &__title {
+    @extend %section-title;
   }
 }
