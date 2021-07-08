@@ -156,6 +156,10 @@ textarea {
 
   &-sm {
     margin: 0.5em 0;
+
+    &:hover {
+      outline: 2px dotted $color-accent;
+    }
   }
 }
 

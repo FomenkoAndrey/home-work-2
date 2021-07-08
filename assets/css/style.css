@@ -444,6 +444,9 @@ textarea {
 .form-group-sm {
   margin: 0.5em 0;
 }
+.form-group-sm:hover {
+  outline: 2px dotted #ff8800;
+}
 
 .hidden {
   display: none;
