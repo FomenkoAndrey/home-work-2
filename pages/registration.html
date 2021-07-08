@@ -11,103 +11,167 @@
 <body class="page-registration">
 
 <header class="header">
-    <nav class="header__navbar">
-      <ul class="header__navbar-list">
-        <li class="header__navbar-item">
-          <a href="../index.html" class="header__navbar-link">ГЛАВНАЯ</a>
-        </li>
-        <li class="header__navbar-item">
-          <a href="articles.html" class="header__navbar-link">СТАТЬИ</a>
-        </li>
-        <li class="header__navbar-item">
-          <a href="catalog.html" class="header__navbar-link">КАТАЛОГ</a>
-        </li>
-        <li class="header__navbar-item">
-          <a href="gallery.html" class="header__navbar-link">ГАЛЕРЕЯ</a>
-        </li>
-        <li class="header__navbar-item">
-          <a href="registration.html" class="header__navbar-link header__navbar-link--active">РЕГИСТРАЦИЯ</a>
-        </li>
-        <li class="header__navbar-item">
-          <a href="contacts.html" class="header__navbar-link">КОНТАКТЫ</a>
-        </li>
-        <li class="header__navbar-item">
-          <a href="page-nav.html" class="header__navbar-link">НАВИГАЦИЯ</a>
-        </li>
-      </ul>
-    </nav>
+  <!--основная навигация-->
+  <nav class="header__navbar">
+    <ul class="header__navbar-list">
+      <li class="header__navbar-item">
+        <a href="../index.html" class="header__navbar-link">ГЛАВНАЯ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="articles.html" class="header__navbar-link">СТАТЬИ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="catalog.html" class="header__navbar-link">КАТАЛОГ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="gallery.html" class="header__navbar-link">ГАЛЕРЕЯ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="registration.html" class="header__navbar-link header__navbar-link--active">РЕГИСТРАЦИЯ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="contacts.html" class="header__navbar-link">КОНТАКТЫ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="page-nav.html" class="header__navbar-link">НАВИГАЦИЯ</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 
 <main class="main container">
   <section class="registration">
     <h1 class="registration__title">Форма регистрации</h1>
-
+    <!--форма контактов-->
     <form action="register.php" method="post">
       <fieldset>
         <legend>#1 Базовые поля ввода</legend>
-        <label>Логин: <input required name="login" value="userName" minlength="3" maxlength="10"
-                             placeholder="Введите логин" type="text"></label>
-        <label>Пароль: <input name="passw" minlength="5" maxlength="10" placeholder="Пароль" type="password"></label>
-        <label>Возраст: <input name="age" min="1" max="122" value="25" placeholder="Возраст" type="number"></label>
-        <label>Имейл: <input name="email" placeholder="Имейл" type="email"></label>
-        <label>Поиск: <input name="search" placeholder="Поиск" type="search"></label>
-        <label>Телефон: <input name="phone" placeholder="Телефон" type="tel"></label>
-        <label>Год рождения: <input name="date" type="date"></label>
-        <label>Дата поступления в вуз: <input name="month" type="month"></label>
-        <label>Ваша аватарка: <input name="file" type="file"></label>
-        <label class="hidden">Проверка на человечность: <input name="hidden" type="hidden"></label>
+        <div class="form-group">
+          <label for="login">Логин:</label>
+          <input id="login" required name="login" value="userName" minlength="3" maxlength="10"
+                 placeholder="Введите логин" type="text">
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль: </label>
+          <input id="password" name="passw" minlength="5" maxlength="10" placeholder="Пароль" type="password">
+        </div>
+        <div class="form-group">
+          <label for="age">Возраст:</label>
+          <input id="age" name="age" min="1" max="122" value="25" placeholder="Возраст" type="number">
+        </div>
+        <div class="form-group">
+          <label for="email">Имейл:</label>
+          <input id="email" name="email" placeholder="Имейл" type="email">
+        </div>
+        <div class="form-group">
+          <label for="search">Поиск:</label>
+          <input id="search" name="search" placeholder="Поиск" type="search">
+        </div>
+        <div class="form-group">
+          <label for="phone">Телефон:</label>
+          <input id="phone" name="phone" placeholder="Телефон" type="tel">
+        </div>
+        <div class="form-group">
+          <label for="date">Год рождения:</label>
+          <input id="date" name="date" type="date">
+        </div>
+        <div class="form-group">
+          <label for="month">Дата поступления в вуз:</label>
+          <input id="month" name="month" type="month">
+        </div>
+        <div class="form-group">
+          <label for="file">Ваша аватарка:</label>
+          <input id="file" name="file" type="file">
+        </div>
+        <div class="hidden">
+          <input name="hidden" type="hidden">
+        </div>
       </fieldset>
 
       <fieldset class="checkbox">
         <legend>#2 Множественный выбор</legend>
         <p>Выберите предпочитаемую кухню:</p>
-        <label><input checked name="ua" value="ukrainian" type="checkbox">Украинская</label>
-        <label><input name="gr" value="georgian" type="checkbox">Грузинская</label>
-        <label><input name="it" value="italian" type="checkbox">Итальянская</label>
-        <label><input name="fr" value="french" type="checkbox">Французская</label>
-        <label><input name="us" value="american" type="checkbox">Американская</label>
-        <label><input name="jp" value="japanese" type="checkbox">Японская</label>
-        <label><input name="ch" value="chinese" type="checkbox">Китайская</label>
+        <div class="form-group-sm">
+          <input id="kit-ua" checked name="kitchen" value="ukrainian" type="checkbox">
+          <label for="kit-ua">Украинская</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="kit-gr" name="kitchen" value="georgian" type="checkbox">
+          <label for="kit-gr">Грузинская</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="kit-it" name="kitchen" value="italian" type="checkbox">
+          <label for="kit-it">Итальянская</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="kit-fr" name="kitchen" value="french" type="checkbox">
+          <label for="kit-fr">Французская</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="kit-us" name="kitchen" value="american" type="checkbox">
+          <label for="kit-us">Американская</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="kit-jp" name="kitchen" value="japanese" type="checkbox">
+          <label for="kit-jp">Японская</label></div>
+        <div class="form-group-sm">
+          <input id="kit-ch" name="kitchen" value="chinese" type="checkbox">
+          <label for="kit-ch">Китайская</label>
+        </div>
       </fieldset>
 
       <fieldset class="radio">
         <legend>#3 Единственный выбор</legend>
-        <p>Выберите ваш пол:</p>
-        <input id="rb1" type="radio" name="gender" value="male">
-        <label for="rb1">Мужской</label>
-        <input id="rb2" type="radio" name="gender" value="female">
-        <label for="rb2">Женский</label>
+        <p>Укажите ваш пол:</p>
+        <div class="form-group-sm">
+          <input id="gender-male" type="radio" name="gender" value="male">
+          <label for="gender-male">Мужской</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="gender-female" type="radio" name="gender" value="female">
+          <label for="gender-female">Женский</label>
+        </div>
       </fieldset>
 
       <fieldset>
         <legend>#4 Открывающийся список</legend>
-        <label for="sel">Года выпуска авто:</label>
-        <select name="sel" id="sel">
-          <option selected disabled value="">Выбери год</option>
-          <option value="2011">2011</option>
-          <option value="2012">2012</option>
-          <option value="2013">2013</option>
-          <option value="2014">2014</option>
-          <option value="2015">2015</option>
-          <option value="2016">2016</option>
-          <option value="2017">2017</option>
-          <option value="2018">2018</option>
-          <option value="2019">2019</option>
-        </select>
+        <div class="form-group">
+          <label for="list">Года выпуска авто:</label>
+          <select name="list" id="list">
+            <option selected disabled value="">Выбери год</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+          </select>
+        </div>
       </fieldset>
 
       <fieldset>
         <legend>#5 Многострочный текст</legend>
-        <label for="txt">Подробная информация о себе:</label>
-        <textarea placeholder="Введите информацию о себе..." name="txt" id="txt" cols="20" rows="7"></textarea>
+        <div class="form-group">
+          <label for="txt">Подробная информация о себе:</label>
+          <textarea placeholder="Введите информацию о себе..." name="txt" id="txt" cols="20" rows="7"></textarea>
+        </div>
       </fieldset>
 
       <fieldset>
         <legend>#6 Кнопки управления формой</legend>
-        <div class="button-set">
-          <button type="submit">Отправить</button>
-          <button type="reset">Сбросить</button>
-          <button onclick="prompt('Who are you?', 'Im real web developer!');" type="button">Потренироваться</button>
+        <div class="btn-set">
+          <div class="form-group">
+            <button type="submit">Отправить</button>
+          </div>
+          <div class="form-group">
+            <button type="reset">Сбросить</button>
+          </div>
+          <div class="form-group">
+            <button type="button" onclick="prompt('Who are you?', 'Im real web developer!');">Потренироваться</button>
+          </div>
         </div>
       </fieldset>
     </form>

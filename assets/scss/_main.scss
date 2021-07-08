@@ -3,15 +3,15 @@
     @extend %section-title;
   }
 
-  &__article {
-    margin-bottom: $gap / 3 * 4;
-    padding-bottom: $gap / 3 * 2;
+  &__article:not(:last-of-type) {
+    margin-bottom: 2em;
+    padding-bottom: 1em;
 
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid $color-gray-light;
   }
 
   .news__article-description {
-    margin-bottom: $gap / 3 * 2;
+    margin-bottom: 1em;
   }
 
   .news__article-title-link {
@@ -111,19 +111,19 @@
   &__address,
   &__time,
   &__map {
-    margin-bottom: $gap;
+    margin-bottom: 1em;
+
+    text-align: center;
   }
 
   &__form {
-    padding: ($gap / 4) ($gap / 2);
+    max-width: $form-width;
+    margin: $gap auto;
+    padding: 1em;
 
     border: 1px solid $color-gray-dark;
     border-radius: 4px;
     background-color: $color-gray-light;
-
-    &-textarea {
-      margin-bottom: $gap / 2;
-    }
   }
 }
 
@@ -138,17 +138,18 @@
 
   &__list {
     display: flex;
+    justify-content: center;
 
     padding: 0;
 
     list-style: none;
   }
 
-  &__item {
+  &__item:not(:last-of-type) {
     &::after {
-      margin-right: $gap / 2;
+      margin-right: 1em;
 
-      content: ", ";
+      content: ",";
     }
   }
 

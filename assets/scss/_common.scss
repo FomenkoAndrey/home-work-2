@@ -1,4 +1,7 @@
-* {
+//типографика
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -17,7 +20,7 @@ body {
 }
 
 h1 {
-  margin-bottom: $gap / 3 * 2;
+  text-align: center;
 
   font-family: $font-header;
   font-size: 2rem;
@@ -25,15 +28,16 @@ h1 {
 }
 
 h2 {
-  margin-bottom: $gap / 2;
+  margin-bottom: 1em;
+
+  text-align: center;
 
   font-family: $font-header;
   font-weight: 400;
 }
 
 p {
-  margin-top: ($gap / 4);
-  margin-bottom: ($gap / 4);
+  margin: 0.5em 0;
 }
 
 a {
@@ -42,95 +46,10 @@ a {
   color: $color-primary;
 }
 
-fieldset {
-  margin: ($gap / 3 * 2) auto $gap;
-  padding: ($gap / 4) ($gap / 2);
-
-  border: 1px solid $color-gray-dark;
-  border-radius: 4px;
-  background-color: $color-gray-light;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-}
-
-legend {
-  background: $color-gray-light;
-  background: linear-gradient(0deg, $color-gray-light 50%, $color-light 60%);
-}
-
-button {
-  @extend %inputs;
-}
-
-select {
-  @extend %inputs;
-}
-
-input {
-  @extend %inputs;
-
-  &[type="file"] {
-    margin-bottom: 10px;
-    padding: 0;
-  }
-
-  &[type="radio"],
-  &[type="checkbox"] {
-    display: inline-block;
-
-    width: auto;
-  }
-}
-
-label {
-  display: block;
-
-  text-align: left;
-
-  .radio &,
-  .checkbox & {
-    display: inline-block;
-
-    &:not(:last-of-type) {
-      margin-right: 15px;
-    }
-  }
-}
-
-textarea {
-  resize: vertical;
-
-  @extend %inputs ;
-}
-
+//общие классы
 .container {
   @extend %container;
   @extend %page-block;
-}
-
-.hidden {
-  display: none;
-}
-
-.google-map {
-  width: 100%;
-}
-
-.button-set {
-  display: flex;
-
-  margin-right: -$gap / 4;
-  margin-left: -$gap / 4;
-
-  button {
-    flex-basis: calc(33.33% - 15px);
-
-    width: calc(33.33% - 15px);
-    margin-right: $gap / 4;
-    margin-left: $gap / 4;
-  }
 }
 
 .page-articles {
@@ -167,4 +86,94 @@ textarea {
   background-image: url(../img/navigation.jpg);
 
   @extend %page-body;
+}
+
+.google-map {
+  width: 100%;
+}
+
+//работа с формой
+fieldset {
+  max-width: $form-width;
+  margin: $gap auto;
+  padding: 1em;
+
+  border: 1px solid $color-gray-dark;
+  border-radius: 4px;
+  background-color: $color-gray-light;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 0 0 1em;
+  }
+}
+
+legend {
+  transform: translateY(-10px);
+}
+
+button {
+  @extend %input;
+}
+
+select {
+  @extend %input;
+}
+
+label {
+  display: inline-block;
+}
+input {
+  @extend %input;
+
+  &[type="file"] {
+    padding: 0;
+  }
+
+  &[type="radio"],
+  &[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5em;
+  }
+}
+
+textarea {
+  width: 100%;
+  min-height: 75px;
+  max-height: 33vh;
+  padding: 10px 20px;
+
+  resize: vertical;
+}
+
+.form-group {
+  &:not(:first-of-type) {
+    margin: 1em 0 0.5em;
+  }
+
+  &-sm {
+    margin: 0.5em 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-set {
+  display: flex;
+
+  margin: 0.25em 0 0.5em;
+
+  gap: 1em;
+
+  .form-group {
+    flex-basis: 33.33%;
+    flex-grow: 1;
+
+    margin: 0;
+  }
 }

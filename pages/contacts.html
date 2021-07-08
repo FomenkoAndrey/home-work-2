@@ -11,36 +11,40 @@
 <body class="page-contacts">
 
 <header class="header">
-    <nav class="header__navbar">
-      <ul class="header__navbar-list">
-        <li class="header__navbar-item">
-          <a href="../index.html" class="header__navbar-link">ГЛАВНАЯ</a>
-        </li>
-        <li class="header__navbar-item">
-          <a href="articles.html" class="header__navbar-link">СТАТЬИ</a>
-        </li>
-        <li class="header__navbar-item">
-          <a href="catalog.html" class="header__navbar-link">КАТАЛОГ</a>
-        </li>
-        <li class="header__navbar-item">
-          <a href="gallery.html" class="header__navbar-link">ГАЛЕРЕЯ</a>
-        </li>
-        <li class="header__navbar-item">
-          <a href="registration.html" class="header__navbar-link">РЕГИСТРАЦИЯ</a>
-        </li>
-        <li class="header__navbar-item">
-          <a href="contacts.html" class="header__navbar-link header__navbar-link--active">КОНТАКТЫ</a>
-        </li>
-        <li class="header__navbar-item">
-          <a href="page-nav.html" class="header__navbar-link">НАВИГАЦИЯ</a>
-        </li>
-      </ul>
-    </nav>
+  <!--основная навигация-->
+  <nav class="header__navbar">
+    <ul class="header__navbar-list">
+      <li class="header__navbar-item">
+        <a href="../index.html" class="header__navbar-link">ГЛАВНАЯ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="articles.html" class="header__navbar-link">СТАТЬИ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="catalog.html" class="header__navbar-link">КАТАЛОГ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="gallery.html" class="header__navbar-link">ГАЛЕРЕЯ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="registration.html" class="header__navbar-link">РЕГИСТРАЦИЯ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="contacts.html" class="header__navbar-link header__navbar-link--active">КОНТАКТЫ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="page-nav.html" class="header__navbar-link">НАВИГАЦИЯ</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 
 <main class="main container">
   <section class="contacts">
+
     <h1 class="contacts__title">Контакты</h1>
+
+    <!--блок адреса-->
     <div class="contacts__body">
       <div class="contacts__location">
         <div class="contacts__address">
@@ -61,27 +65,35 @@
         </div>
       </div>
 
+      <!--форма контактов-->
       <div class="contacts__feedback">
         <h2>Обратная связь</h2>
         <form class="contacts__form" action="feedback.php" method="post">
-          <label>Ваше имя:
-            <input name="name" type="text" placeholder="Введите имя" autofocus>
-          </label>
-          <label>Контактный телефон:
-            <input name="phone" type="tel" pattern="380-[0-9]{5}-[0-9]{4}"
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input id="name" name="name" type="text" placeholder="Введите имя" autofocus>
+          </div>
+          <div class="form-group">
+            <label for="phone">Контактный телефон:</label>
+            <input id="phone" name="phone" type="tel" pattern="380-[0-9]{5}-[0-9]{4}"
                    placeholder="Ваш телефон в формате 380-XXXXX-XXXX">
-          </label>
-          <label>Email:
-            <input name="email" type="email" placeholder="Ваш e-mail">
-          </label>
-          <label>Вопрос:
-            <textarea class="contacts__form-textarea" name="question" id="text-field" cols="40" rows="7"
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="Ваш e-mail">
+          </div>
+          <div class="form-group">
+            <label for="txt">Вопрос:</label>
+            <textarea class="contacts__form-textarea" id="txt" name="question" cols="40" rows="7"
                       placeholder="Задайте нам свой вопрос"></textarea>
-          </label>
-          <input type="submit" value="Отправить">
+          </div>
+          <div class="form-group">
+            <button type="submit">Отправить</button>
+          </div>
         </form>
       </div>
     </div>
+
   </section>
 </main>
 
