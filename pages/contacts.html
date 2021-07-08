@@ -5,89 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Контакты</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body class="page-contacts">
+<body>
 
-<header class="header">
+<header>
   <!--основная навигация-->
-  <nav class="header__navbar">
-    <ul class="header__navbar-list">
-      <li class="header__navbar-item">
-        <a href="../index.html" class="header__navbar-link">ГЛАВНАЯ</a>
-      </li>
-      <li class="header__navbar-item">
-        <a href="articles.html" class="header__navbar-link">СТАТЬИ</a>
-      </li>
-      <li class="header__navbar-item">
-        <a href="catalog.html" class="header__navbar-link">КАТАЛОГ</a>
-      </li>
-      <li class="header__navbar-item">
-        <a href="gallery.html" class="header__navbar-link">ГАЛЕРЕЯ</a>
-      </li>
-      <li class="header__navbar-item">
-        <a href="registration.html" class="header__navbar-link">РЕГИСТРАЦИЯ</a>
-      </li>
-      <li class="header__navbar-item">
-        <a href="contacts.html" class="header__navbar-link header__navbar-link--active">КОНТАКТЫ</a>
-      </li>
-      <li class="header__navbar-item">
-        <a href="page-nav.html" class="header__navbar-link">НАВИГАЦИЯ</a>
-      </li>
+  <nav>
+    <ul>
+      <li><a href="../index.html">ГЛАВНАЯ</a></li>
+      <li><a href="articles.html">СТАТЬИ</a></li>
+      <li><a href="catalog.html">КАТАЛОГ</a></li>
+      <li><a href="gallery.html">ГАЛЕРЕЯ</a></li>
+      <li><a href="registration.html">РЕГИСТРАЦИЯ</a></li>
+      <li><a href="contacts.html">КОНТАКТЫ</a></li>
+      <li><a href="page-nav.html">НАВИГАЦИЯ</a></li>
     </ul>
   </nav>
 </header>
 
-<main class="main container">
-  <section class="contacts">
+<main>
+  <section>
 
-    <h1 class="contacts__title">Контакты</h1>
+    <h1>Контакты</h1>
 
     <!--блок адреса-->
-    <div class="contacts__body">
-      <div class="contacts__location">
-        <div class="contacts__address">
+    <div>
+      <div>
+        <div>
           <h2>Адрес</h2>
           <p>г. Харьков,<br>
             ул. Отакара Яроша 18,<br>
             3 этаж, оф. 303</p>
         </div>
-        <div class="contacts__time">
+        <div>
           <h2>Время работы</h2>
           <p>Пн.-Пт.: с 10:00 до 18:00</p>
         </div>
-        <div class="contacts__map">
+        <div>
           <h2>Как нас найти</h2>
-          <iframe class="google-map"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d640.7996546366019!2d36.217398!3d50.026374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49b393aef25a2889!2sSolyaris!5e0!3m2!1sen!2sua!4v1559117525401!5m2!1sen!2sua"
-                  width="600" height="350" style="border:0" allowfullscreen></iframe>
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d640.7996546366019!2d36.217398!3d50.026374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49b393aef25a2889!2sSolyaris!5e0!3m2!1sen!2sua!4v1559117525401!5m2!1sen!2sua"
+              width="600" height="350" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
 
       <!--форма контактов-->
-      <div class="contacts__feedback">
+      <div>
         <h2>Обратная связь</h2>
-        <form class="contacts__form" action="feedback.php" method="post">
-          <div class="form-group">
+        <form action="feedback.php" method="post">
+          <div>
             <label for="name">Ваше имя:</label>
             <input id="name" name="name" type="text" placeholder="Введите имя" autofocus>
           </div>
-          <div class="form-group">
+          <div>
             <label for="phone">Контактный телефон:</label>
             <input id="phone" name="phone" type="tel" pattern="380-[0-9]{5}-[0-9]{4}"
                    placeholder="Ваш телефон в формате 380-XXXXX-XXXX">
           </div>
-          <div class="form-group">
+          <div>
             <label for="email">Email:</label>
             <input id="email" name="email" type="email" placeholder="Ваш e-mail">
           </div>
-          <div class="form-group">
+          <div>
             <label for="txt">Вопрос:</label>
-            <textarea class="contacts__form-textarea" id="txt" name="question" cols="40" rows="7"
-                      placeholder="Задайте нам свой вопрос"></textarea>
+            <textarea id="txt" name="question" cols="40" rows="7" placeholder="Задайте нам свой вопрос"></textarea>
           </div>
-          <div class="form-group">
+          <div>
             <button type="submit">Отправить</button>
           </div>
         </form>
@@ -97,8 +82,8 @@
   </section>
 </main>
 
-<footer class="footer">
-  <div class="footer__copyright">&copy; Maksim Borovik</div>
+<footer>
+  <div>&copy; Maksim Borovik</div>
 </footer>
 
 </body>
