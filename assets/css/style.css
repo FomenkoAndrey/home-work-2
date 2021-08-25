@@ -466,6 +466,15 @@ textarea {
   margin: 0;
 }
 
+.anchor {
+  position: relative;
+}
+
+.anchor > span {
+  position: absolute;
+  top: -130px;
+}
+
 .header {
   position: fixed;
   z-index: 10;
@@ -620,6 +629,10 @@ textarea {
   content: ",";
 }
 .navigation__back2top {
+  display: block;
+
+  margin-bottom: 2em;
+
   font-weight: 700;
 }
 
@@ -642,7 +655,7 @@ textarea {
 .page-content__comments-avatar {
   flex-basis: 75px;
 
-  padding-right: 0;
+  margin-right: 1em;
 }
 .page-content__comments-image {
   width: 75px;
