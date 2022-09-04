@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
   <title>Галерея</title>
 </head>
 <body class="page-gallery">
@@ -15,25 +15,25 @@
   <nav class="header__navbar">
     <ul class="header__navbar-list">
       <li class="header__navbar-item">
-        <a href="../index.html" class="header__navbar-link">ГЛАВНАЯ</a>
+        <a class="header__navbar-link" href="../index.html">ГЛАВНАЯ</a>
       </li>
       <li class="header__navbar-item">
-        <a href="articles.html" class="header__navbar-link">СТАТЬИ</a>
+        <a class="header__navbar-link" href="articles.html">СТАТЬИ</a>
       </li>
       <li class="header__navbar-item">
-        <a href="catalog.html" class="header__navbar-link">КАТАЛОГ</a>
+        <a class="header__navbar-link" href="catalog.html">КАТАЛОГ</a>
       </li>
       <li class="header__navbar-item">
-        <a href="gallery.html" class="header__navbar-link header__navbar-link--active">ГАЛЕРЕЯ</a>
+        <a class="header__navbar-link header__navbar-link--active" href="gallery.html">ГАЛЕРЕЯ</a>
       </li>
       <li class="header__navbar-item">
-        <a href="registration.html" class="header__navbar-link">РЕГИСТРАЦИЯ</a>
+        <a class="header__navbar-link" href="registration.html">РЕГИСТРАЦИЯ</a>
       </li>
       <li class="header__navbar-item">
-        <a href="contacts.html" class="header__navbar-link">КОНТАКТЫ</a>
+        <a class="header__navbar-link" href="contacts.html">КОНТАКТЫ</a>
       </li>
       <li class="header__navbar-item">
-        <a href="page-nav.html" class="header__navbar-link">НАВИГАЦИЯ</a>
+        <a class="header__navbar-link" href="page-nav.html">НАВИГАЦИЯ</a>
       </li>
     </ul>
   </nav>
@@ -43,6 +43,9 @@
   <section class="gallery">
     <h1 class="gallery__title">Галлерея</h1>
     <div class="gallery__slides">
+      <!-- Здесь структура слайдов отличается от требований задачи.
+      Это обосновано спецификой результата - получается кликабельный слайдер.
+      Для реализации вы можете выбрать более простой вариант из другого примера.-->
       <div class="gallery__slides-list">
         <div class="gallery__slide-item">
           <h4><a class="gallery__slide-anchor" href="#slide1">Слайд #1</a></h4>
@@ -71,16 +74,16 @@
       </div>
       <div class="gallery__slides-pictures">
         <div class="gallery__slide-picture" id="slide1">
-          <img class="gallery__slide-image" src="../assets/img/1.jpg" alt="Галерея">
+          <img alt="Галерея" class="gallery__slide-image" src="../assets/img/1.jpg">
         </div>
         <div class="gallery__slide-picture" id="slide2">
-          <img class="gallery__slide-image" src="../assets/img/2.jpg" alt="Галерея">
+          <img alt="Галерея" class="gallery__slide-image" src="../assets/img/2.jpg">
         </div>
         <div class="gallery__slide-picture" id="slide3">
-          <img class="gallery__slide-image" src="../assets/img/3.png" alt="Галерея">
+          <img alt="Галерея" class="gallery__slide-image" src="../assets/img/3.png">
         </div>
         <div class="gallery__slide-picture" id="slide4">
-          <img class="gallery__slide-image" src="../assets/img/4.png" alt="Галерея">
+          <img alt="Галерея" class="gallery__slide-image" src="../assets/img/4.png">
         </div>
       </div>
     </div>
